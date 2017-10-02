@@ -6,12 +6,13 @@ Sample project using ionic 3, mongoDb and nodejs
 - install nodeJs https://nodejs.org/en/
 
 # Getting start
+open terminal and run this command
 - git clone git@github.com:Risez25/Todo-MEAN-ionic-3.git
 - cd Todo-Mean-ionic-3
 - cd Front-end
 - npm i
 - ionic serve
-+ Then in new terminal run this script
+Then in new terminal run this script
 - cd Back-end
 - npm i
 - npm start
