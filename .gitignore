@@ -1,0 +1,13 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+Front-end/node_modules/
+Front-end/hooks/
+Front-end/www/
+Front-end/.sourcemaps
+
+Back-end/node_modules/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate

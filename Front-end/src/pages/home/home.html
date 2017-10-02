@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>To Do List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+ <ion-content padding>
+  <form [formGroup]="listForm">
+    <ion-item>
+      <ion-label floating ></ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+  </form>
+  <button ion-button full color="primary" (click)="save()">Add</button>
+
+  <ion-list *ngFor="let list of listProvider.data; index as i" [ngClass]="{'is-active': list.isUpdate}">
+        <ion-item *ngIf="!list.isUpdate; else update">
+            {{list.name}}
+             <button ion-button clear item-end (click)="list.isUpdate = !list.isUpdate">Update</button>
+             <button ion-button clear item-end (click)="removeList(list._id)">Delete</button>
+        </ion-item>
+        <ng-template #update>
+            <ion-item >
+              <ion-input type="text" placeholder="{{list.name}}" #listName ></ion-input>
+              <button ion-button clear item-end (click)="updateList(list,listName)" (click)="list.isUpdate = !list.isUpdate">Confirm</button>
+              <button ion-button clear item-end (click)="list.isUpdate = !list.isUpdate">Cancel</button>
+            </ion-item>
+        </ng-template>
+    </ion-list>
+</ion-content> 
