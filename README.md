@@ -11,7 +11,7 @@ Sample project using ionic 3, mongoDb and nodejs
 - cd Front-end
 - npm i
 - ionic serve
-- cd ..
++ Then in new terminal run this script
 - cd Back-end
 - npm i
 - npm start
