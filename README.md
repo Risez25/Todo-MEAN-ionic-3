@@ -12,7 +12,9 @@ open terminal and run this command
 - cd Front-end
 - npm i
 - ionic serve
+
 Then in new terminal run this script
+
 - cd Back-end
 - npm i
 - npm start
