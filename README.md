@@ -3,7 +3,7 @@ Sample project using ionic 3, mongoDb and nodejs
 
 # Project dependencies
 - install mongoDb https://www.mongodb.com/download-center#atlas
-- istall nodeJs https://nodejs.org/en/
+- install nodeJs https://nodejs.org/en/
 
 # Getting start
 - git clone git@github.com:Risez25/Todo-MEAN-ionic-3.git
